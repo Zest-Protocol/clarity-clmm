@@ -1,0 +1,29 @@
+{
+  "name": "clarity-clmm-local-testing",
+  "version": "2.0.0",
+  "description": "Simnet test environment for Zest CLMM (Clarity 6 / epoch 4.0)",
+  "type": "module",
+  "private": true,
+  "license": "BUSL-1.1",
+  "author": "Zest Protocol",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "clarinet check",
+    "test": "vitest run",
+    "test:report": "vitest run -- --coverage --costs",
+    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"pnpm run test:report\"",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "devDependencies": {
+    "@stacks/clarinet-sdk": "3.24.1",
+    "@stacks/transactions": "7.6.0",
+    "@types/node": "24.19.1",
+    "@vitest/expect": "4.1.11",
+    "chokidar-cli": "3.0.0",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11",
+    "vitest-environment-clarinet": "3.0.2"
+  }
+}

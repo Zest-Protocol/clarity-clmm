@@ -1,0 +1,139 @@
+[project]
+name = "clarity-clmm"
+authors = []
+description = "Discrete concentrated-liquidity AMM (Clarity 6 / epoch 4.0)"
+telemetry = false
+cache_dir = "./.cache"
+requirements = [
+  { contract_id = "SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard" },
+  { contract_id = "SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V.sip013-semi-fungible-token-trait" }
+]
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[contracts.proposal-trait]
+path = "contracts/governance/proposal-trait.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.extension-trait]
+path = "contracts/governance/extension-trait.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.executor-dao]
+path = "contracts/governance/executor-dao.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.operators]
+path = "contracts/governance/operators.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.bootstrap]
+path = "contracts/governance/bootstrap.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.clmm-lp-token-v1]
+path = "contracts/clmm-lp-token-v1.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.clmm-pool-v1]
+path = "contracts/clmm-pool-v1.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.clmm-router-v1]
+path = "contracts/clmm-router-v1.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.clmm-vault-v1]
+path = "contracts/clmm-vault-v1.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.clmm-vault-batch64-v1]
+path = "contracts/clmm-vault-batch64-v1.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.clmm-vault-public-v1]
+path = "contracts/clmm-vault-public-v1.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.per-bin-router-ref]
+path = "contracts/mocks/per-bin-router-ref.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.mock-token-a]
+path = "contracts/mocks/mock-token-a.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.mock-token-b]
+path = "contracts/mocks/mock-token-b.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.mock-token-c]
+path = "contracts/mocks/mock-token-c.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.mock-token-stx]
+path = "contracts/mocks/mock-token-stx.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.mock-token-evil]
+path = "contracts/mocks/mock-token-evil.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.mock-token-lp-thief]
+path = "contracts/mocks/mock-token-lp-thief.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.devnet-proposal-vault]
+path = "contracts/mocks/proposal-vault.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.devnet-bootstrap]
+path = "contracts/mocks/bootstrap.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.devnet-test-proposal]
+path = "contracts/mocks/test-proposal.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.devnet-proposal-list-pool]
+path = "contracts/mocks/proposal-list-pool.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.devnet-proposal-add-operators]
+path = "contracts/mocks/proposal-add-operators.clar"
+clarity_version = 6
+epoch = "4.0"
+
+[contracts.devnet-proposal-bump-epoch]
+path = "contracts/mocks/proposal-bump-epoch.clar"
+clarity_version = 6
+epoch = "4.0"

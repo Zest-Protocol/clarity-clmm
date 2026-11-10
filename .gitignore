@@ -1,0 +1,23 @@
+**/settings/Mainnet.toml
+**/settings/Testnet.toml
+.DS_Store
+
+*.log
+coverage
+lcov.info
+costs-reports.json
+node_modules
+.devnet/
+.pnpm-store/
+
+# simnet cache, except the vendored SIP trait sources the simnet plan reads
+local-testing/.cache/*
+!local-testing/.cache/requirements/
+
+# lock files of other package managers
+yarn.lock
+package-lock.json
+pnpm-lock.json
+
+# local files
+logs

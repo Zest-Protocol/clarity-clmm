@@ -1,0 +1,3 @@
+# pnpm 11 reads these policy settings from here, not from .npmrc
+minimumReleaseAge: 10080
+ignoreScripts: true

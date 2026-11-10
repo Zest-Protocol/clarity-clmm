@@ -1,0 +1,4 @@
+local-testing/tests/** linguist-vendored
+local-testing/vitest.config.ts linguist-vendored
+docs/** linguist-documentation
+* text=auto eol=lf
