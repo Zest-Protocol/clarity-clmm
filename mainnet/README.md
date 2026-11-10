@@ -62,6 +62,6 @@ Zest CLMM has been audited by:
 
 For the local testing environment [click here](../local-testing/README.md) to get started.
 
-**Bug bounty program on Immunefi:** https://immunefi.com/bug-bounty/zest-protocol-v2/information/ (the contracts listed above will be added to its scope)
+**Bug bounty program on Immunefi:** https://immunefi.com/bug-bounty/zest-protocol-v2/information/ 
 
 For direct disclosure: security@zestprotocol.com
